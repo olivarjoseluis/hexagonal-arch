@@ -130,3 +130,5 @@ export async function DELETE(request: Request) {
     return NextResponse.json({ error: errorMessage }, { status });
   }
 }
+
+export { OPTIONS } from '@/modules/shared/infrastructure/api/cors.handler';
